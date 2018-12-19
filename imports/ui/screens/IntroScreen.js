@@ -14,7 +14,7 @@ export default class IntroScreen extends Component<Props> {
     constructor(props){
         super(props);
         this.state =  {
-            userName:'Default',
+            userName:'Guest',
             isDialogVisible:false
         }
     }

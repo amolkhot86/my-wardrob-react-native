@@ -95,7 +95,6 @@ def enableProguardInReleaseBuilds = false
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion '28.0.3'
 
     defaultConfig {
         applicationId "com.mywardrob"
@@ -137,8 +136,8 @@ android {
 }
 
 dependencies {
-    compile project(':realm')
-    compile project(':react-native-camera')
+    implementation project(':realm')
+    implementation project(':react-native-camera')
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
     implementation "com.facebook.react:react-native:+"  // From node_modules
